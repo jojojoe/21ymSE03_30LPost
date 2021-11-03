@@ -1,0 +1,29 @@
+
+[
+     
+    {
+        "thumbName" : "editor_crop1",
+        "bigName" : "1:1",
+        "isPro": false
+    },
+    {
+        "thumbName" : "editor_crop2",
+        "bigName" : "3:2",
+        "isPro": false
+    },
+    {
+        "thumbName" : "editor_crop3",
+        "bigName" : "2:3",
+        "isPro": true
+    },
+    {
+        "thumbName" : "editor_crop4",
+        "bigName" : "16:9",
+        "isPro": true
+    },
+    {
+        "thumbName" : "editor_crop5",
+        "bigName" : "9:16",
+        "isPro": true
+    }
+]

@@ -1,0 +1,7 @@
+LpymLpost.xcodeproj/xcuserdata/
+LpymLpost.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+LpymLpost.xcodeproj/project.xcworkspace/xcuserdata/
