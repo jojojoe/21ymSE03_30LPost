@@ -138,15 +138,17 @@ class LPySettingV: UIViewController {
     }
     
     @objc func privacyBtnClick(sender: UIButton) {
-        UIApplication.shared.openURL(url: PrivacyPolicyURLStr)
-//        let vc = HighLightingViewController(contentUrl: nil)
-//        vc.pushSaferiVC(url: PrivacyPolicyURLStr)
+//        UIApplication.shared.openURL(url: PrivacyPolicyURLStr)
+        let vc = HighLightingViewController(contentUrl: nil)
+        vc.pushSaferiVC(url: PrivacyPolicyURLStr)
+        
     }
     
     @objc func termsBtnClick(sender: UIButton) {
-        UIApplication.shared.openURL(url: TermsofuseURLStr)
-//        let vc = HighLightingViewController(contentUrl: nil)
-//        vc.pushSaferiVC(url: TermsofuseURLStr)
+//        UIApplication.shared.openURL(url: TermsofuseURLStr)
+        let vc = HighLightingViewController(contentUrl: nil)
+        vc.pushSaferiVC(url: TermsofuseURLStr)
+         
     }
     
     @objc func feedbackBtnClick(sender: UIButton) {

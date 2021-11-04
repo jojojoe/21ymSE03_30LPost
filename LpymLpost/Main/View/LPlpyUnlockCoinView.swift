@@ -70,7 +70,7 @@ class LPlpyUnlockCoinView: UIView {
       
       //
       let titLab = UILabel()
-          .text("This is a paid function.")
+          .text("Paid Item.")
           .textAlignment(.center)
           .numberOfLines(0)
           .fontName(24, "AvenirNext-Bold")
@@ -84,8 +84,9 @@ class LPlpyUnlockCoinView: UIView {
           $0.height.greaterThanOrEqualTo(1)
       }
       //
+      
       let titLab2 = UILabel()
-          .text("Currently it is a paid item, \(IPymCoinManager.default.coinCostCount) coins need to be deducted for copy")
+          .text("Using paid item will cost \(LPymCoinManagr.default.coinCostCount) coins.")
           .textAlignment(.center)
           .numberOfLines(0)
           .fontName(16, "AvenirNext-Regular")

@@ -72,6 +72,48 @@
 		EB9D62BB2730EEFA00F97FAF /* LPySlideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62BA2730EEFA00F97FAF /* LPySlideVC.swift */; };
 		EB9D62BD2730EF1100F97FAF /* LPySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62BC2730EF1100F97FAF /* LPySliderView.swift */; };
 		EB9D62BF2731450900F97FAF /* LPySliderSaveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62BE2731450900F97FAF /* LPySliderSaveVC.swift */; };
+		EB9D62F42732653900F97FAF /* InnLiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62C72732653200F97FAF /* InnLiHandler.swift */; };
+		EB9D62F52732653A00F97FAF /* Untitled.html in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62C82732653200F97FAF /* Untitled.html */; };
+		EB9D62F62732653A00F97FAF /* InnTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62C92732653200F97FAF /* InnTextView.swift */; };
+		EB9D62F72732653A00F97FAF /* InnTwoFactorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62CA2732653200F97FAF /* InnTwoFactorLoginView.swift */; };
+		EB9D62F82732653A00F97FAF /* VC+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62CC2732653200F97FAF /* VC+Route.swift */; };
+		EB9D62F92732653A00F97FAF /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62CD2732653200F97FAF /* SwiftyTimer.swift */; };
+		EB9D62FA2732653A00F97FAF /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62CE2732653200F97FAF /* Foundation+Extension.swift */; };
+		EB9D62FB2732653A00F97FAF /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62CF2732653200F97FAF /* UIKitExtension.swift */; };
+		EB9D62FC2732653A00F97FAF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62D02732653200F97FAF /* StringExtension.swift */; };
+		EB9D62FD2732653A00F97FAF /* loding2.webp in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62D12732653200F97FAF /* loding2.webp */; };
+		EB9D62FE2732653A00F97FAF /* InnLiChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62D22732653200F97FAF /* InnLiChallengeView.swift */; };
+		EB9D62FF2732653A00F97FAF /* InnLiVerifyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62D32732653200F97FAF /* InnLiVerifyCodeView.swift */; };
+		EB9D63002732653A00F97FAF /* InnRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62D52732653200F97FAF /* InnRequestHelper.swift */; };
+		EB9D63012732653A00F97FAF /* Loding1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62D62732653200F97FAF /* Loding1.gif */; };
+		EB9D63022732653A00F97FAF /* InnNWLiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62D72732653200F97FAF /* InnNWLiViewController.swift */; };
+		EB9D63032732653A00F97FAF /* ic_a_c@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62D92732653200F97FAF /* ic_a_c@3x.png */; };
+		EB9D63042732653A00F97FAF /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DA2732653200F97FAF /* login.html */; };
+		EB9D63052732653A00F97FAF /* ic_a_c@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DB2732653200F97FAF /* ic_a_c@2x.png */; };
+		EB9D63062732653A00F97FAF /* log_in_close_ic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DC2732653200F97FAF /* log_in_close_ic@3x.png */; };
+		EB9D63072732653A00F97FAF /* ic_c_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DD2732653200F97FAF /* ic_c_s@3x.png */; };
+		EB9D63082732653A00F97FAF /* ic_c_us@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DE2732653200F97FAF /* ic_c_us@3x.png */; };
+		EB9D63092732653A00F97FAF /* dialog-main.css in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62DF2732653200F97FAF /* dialog-main.css */; };
+		EB9D630A2732653A00F97FAF /* ic_c_us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E02732653200F97FAF /* ic_c_us@2x.png */; };
+		EB9D630B2732653A00F97FAF /* InnLiSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E12732653200F97FAF /* InnLiSubviews.xib */; };
+		EB9D630C2732653A00F97FAF /* ic_c_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E22732653200F97FAF /* ic_c_s@2x.png */; };
+		EB9D630D2732653A00F97FAF /* log_in_close_ic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E32732653200F97FAF /* log_in_close_ic@2x.png */; };
+		EB9D630E2732653A00F97FAF /* f000029293.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E42732653200F97FAF /* f000029293.png */; };
+		EB9D630F2732653A00F97FAF /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E52732653200F97FAF /* detail.html */; };
+		EB9D63102732653A00F97FAF /* ic_c_c@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E62732653200F97FAF /* ic_c_c@2x.png */; };
+		EB9D63112732653A00F97FAF /* ic_c_c@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62E72732653200F97FAF /* ic_c_c@3x.png */; };
+		EB9D63122732653A00F97FAF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62E82732653300F97FAF /* LoadingView.swift */; };
+		EB9D63132732653A00F97FAF /* HightLigtingUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62EA2732653900F97FAF /* HightLigtingUserManager.swift */; };
+		EB9D63142732653A00F97FAF /* HightLigtingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62EB2732653900F97FAF /* HightLigtingHelper.swift */; };
+		EB9D63152732653A00F97FAF /* HightLightingPriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62EC2732653900F97FAF /* HightLightingPriceManager.swift */; };
+		EB9D63162732653A00F97FAF /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62ED2732653900F97FAF /* DataEncoding.swift */; };
+		EB9D63172732653A00F97FAF /* ASAManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62EE2732653900F97FAF /* ASAManage.swift */; };
+		EB9D63182732653A00F97FAF /* ExchangeManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62EF2732653900F97FAF /* ExchangeManage.swift */; };
+		EB9D63192732653B00F97FAF /* AdjustConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9D62F02732653900F97FAF /* AdjustConfig.json */; };
+		EB9D631A2732653B00F97FAF /* HighLightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62F12732653900F97FAF /* HighLightingViewController.swift */; };
+		EB9D631B2732653B00F97FAF /* HightLightingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62F22732653900F97FAF /* HightLightingExtension.swift */; };
+		EB9D631C2732653B00F97FAF /* AFlyerLibManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D62F32732653900F97FAF /* AFlyerLibManage.swift */; };
+		EB9D631E27326BA800F97FAF /* LPyPurchaseHiligh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D631D27326BA800F97FAF /* LPyPurchaseHiligh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +199,48 @@
 		EB9D62BC2730EF1100F97FAF /* LPySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPySliderView.swift; sourceTree = "<group>"; };
 		EB9D62BE2731450900F97FAF /* LPySliderSaveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPySliderSaveVC.swift; sourceTree = "<group>"; };
 		EB9D62C42732450200F97FAF /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		EB9D62C72732653200F97FAF /* InnLiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLiHandler.swift; sourceTree = "<group>"; };
+		EB9D62C82732653200F97FAF /* Untitled.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Untitled.html; sourceTree = "<group>"; };
+		EB9D62C92732653200F97FAF /* InnTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnTextView.swift; sourceTree = "<group>"; };
+		EB9D62CA2732653200F97FAF /* InnTwoFactorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnTwoFactorLoginView.swift; sourceTree = "<group>"; };
+		EB9D62CC2732653200F97FAF /* VC+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+Route.swift"; sourceTree = "<group>"; };
+		EB9D62CD2732653200F97FAF /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		EB9D62CE2732653200F97FAF /* Foundation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
+		EB9D62CF2732653200F97FAF /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		EB9D62D02732653200F97FAF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EB9D62D12732653200F97FAF /* loding2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = loding2.webp; sourceTree = "<group>"; };
+		EB9D62D22732653200F97FAF /* InnLiChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLiChallengeView.swift; sourceTree = "<group>"; };
+		EB9D62D32732653200F97FAF /* InnLiVerifyCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLiVerifyCodeView.swift; sourceTree = "<group>"; };
+		EB9D62D52732653200F97FAF /* InnRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnRequestHelper.swift; sourceTree = "<group>"; };
+		EB9D62D62732653200F97FAF /* Loding1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loding1.gif; sourceTree = "<group>"; };
+		EB9D62D72732653200F97FAF /* InnNWLiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnNWLiViewController.swift; sourceTree = "<group>"; };
+		EB9D62D92732653200F97FAF /* ic_a_c@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_a_c@3x.png"; sourceTree = "<group>"; };
+		EB9D62DA2732653200F97FAF /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
+		EB9D62DB2732653200F97FAF /* ic_a_c@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_a_c@2x.png"; sourceTree = "<group>"; };
+		EB9D62DC2732653200F97FAF /* log_in_close_ic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_in_close_ic@3x.png"; sourceTree = "<group>"; };
+		EB9D62DD2732653200F97FAF /* ic_c_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_s@3x.png"; sourceTree = "<group>"; };
+		EB9D62DE2732653200F97FAF /* ic_c_us@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_us@3x.png"; sourceTree = "<group>"; };
+		EB9D62DF2732653200F97FAF /* dialog-main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "dialog-main.css"; sourceTree = "<group>"; };
+		EB9D62E02732653200F97FAF /* ic_c_us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_us@2x.png"; sourceTree = "<group>"; };
+		EB9D62E12732653200F97FAF /* InnLiSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InnLiSubviews.xib; sourceTree = "<group>"; };
+		EB9D62E22732653200F97FAF /* ic_c_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_s@2x.png"; sourceTree = "<group>"; };
+		EB9D62E32732653200F97FAF /* log_in_close_ic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_in_close_ic@2x.png"; sourceTree = "<group>"; };
+		EB9D62E42732653200F97FAF /* f000029293.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f000029293.png; sourceTree = "<group>"; };
+		EB9D62E52732653200F97FAF /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
+		EB9D62E62732653200F97FAF /* ic_c_c@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_c@2x.png"; sourceTree = "<group>"; };
+		EB9D62E72732653200F97FAF /* ic_c_c@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_c@3x.png"; sourceTree = "<group>"; };
+		EB9D62E82732653300F97FAF /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EB9D62EA2732653900F97FAF /* HightLigtingUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLigtingUserManager.swift; sourceTree = "<group>"; };
+		EB9D62EB2732653900F97FAF /* HightLigtingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLigtingHelper.swift; sourceTree = "<group>"; };
+		EB9D62EC2732653900F97FAF /* HightLightingPriceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLightingPriceManager.swift; sourceTree = "<group>"; };
+		EB9D62ED2732653900F97FAF /* DataEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
+		EB9D62EE2732653900F97FAF /* ASAManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAManage.swift; sourceTree = "<group>"; };
+		EB9D62EF2732653900F97FAF /* ExchangeManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeManage.swift; sourceTree = "<group>"; };
+		EB9D62F02732653900F97FAF /* AdjustConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AdjustConfig.json; sourceTree = "<group>"; };
+		EB9D62F12732653900F97FAF /* HighLightingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLightingViewController.swift; sourceTree = "<group>"; };
+		EB9D62F22732653900F97FAF /* HightLightingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLightingExtension.swift; sourceTree = "<group>"; };
+		EB9D62F32732653900F97FAF /* AFlyerLibManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFlyerLibManage.swift; sourceTree = "<group>"; };
+		EB9D631D27326BA800F97FAF /* LPyPurchaseHiligh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPyPurchaseHiligh.swift; sourceTree = "<group>"; };
 		EE0462577153321F402CCBC4 /* Pods_LpymLpost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LpymLpost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62950B235645345DBAF47F1 /* Pods_LpymLpost_LpymLpostUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LpymLpost_LpymLpostUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +278,8 @@
 		0401A683272B8959008FB6BC /* LpymLpost */ = {
 			isa = PBXGroup;
 			children = (
+				EB9D62E92732653900F97FAF /* HighLightingEx */,
+				EB9D62C52732653200F97FAF /* InnLi */,
 				EB8B38AB272BD6600001C20B /* FilterManager */,
 				EB8B3844272B9EE80001C20B /* CropManager */,
 				EB8B3845272B9EE80001C20B /* Main */,
@@ -316,6 +402,7 @@
 				EB8B384F272B9EE90001C20B /* ExtensionTool.swift */,
 				EB8B3850272B9EE90001C20B /* sticker.json */,
 				EB8B3851272B9EE90001C20B /* LPyPurchaseM.swift */,
+				EB9D631D27326BA800F97FAF /* LPyPurchaseHiligh.swift */,
 				EB8B38A1272BA4950001C20B /* crop.json */,
 				EB9D62B62730CB8400F97FAF /* quote.json */,
 				EB9D62B82730D84900F97FAF /* LpyUnlockManager.swift */,
@@ -407,6 +494,93 @@
 			path = FilterManager;
 			sourceTree = "<group>";
 		};
+		EB9D62C52732653200F97FAF /* InnLi */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62C62732653200F97FAF /* Handler */,
+				EB9D62C82732653200F97FAF /* Untitled.html */,
+				EB9D62C92732653200F97FAF /* InnTextView.swift */,
+				EB9D62CA2732653200F97FAF /* InnTwoFactorLoginView.swift */,
+				EB9D62CB2732653200F97FAF /* Extenison */,
+				EB9D62D12732653200F97FAF /* loding2.webp */,
+				EB9D62D22732653200F97FAF /* InnLiChallengeView.swift */,
+				EB9D62D32732653200F97FAF /* InnLiVerifyCodeView.swift */,
+				EB9D62D42732653200F97FAF /* Request */,
+				EB9D62D62732653200F97FAF /* Loding1.gif */,
+				EB9D62D72732653200F97FAF /* InnNWLiViewController.swift */,
+				EB9D62D82732653200F97FAF /* Resource */,
+				EB9D62E82732653300F97FAF /* LoadingView.swift */,
+			);
+			path = InnLi;
+			sourceTree = "<group>";
+		};
+		EB9D62C62732653200F97FAF /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62C72732653200F97FAF /* InnLiHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		EB9D62CB2732653200F97FAF /* Extenison */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62CC2732653200F97FAF /* VC+Route.swift */,
+				EB9D62CD2732653200F97FAF /* SwiftyTimer.swift */,
+				EB9D62CE2732653200F97FAF /* Foundation+Extension.swift */,
+				EB9D62CF2732653200F97FAF /* UIKitExtension.swift */,
+				EB9D62D02732653200F97FAF /* StringExtension.swift */,
+			);
+			path = Extenison;
+			sourceTree = "<group>";
+		};
+		EB9D62D42732653200F97FAF /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62D52732653200F97FAF /* InnRequestHelper.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB9D62D82732653200F97FAF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62D92732653200F97FAF /* ic_a_c@3x.png */,
+				EB9D62DA2732653200F97FAF /* login.html */,
+				EB9D62DB2732653200F97FAF /* ic_a_c@2x.png */,
+				EB9D62DC2732653200F97FAF /* log_in_close_ic@3x.png */,
+				EB9D62DD2732653200F97FAF /* ic_c_s@3x.png */,
+				EB9D62DE2732653200F97FAF /* ic_c_us@3x.png */,
+				EB9D62DF2732653200F97FAF /* dialog-main.css */,
+				EB9D62E02732653200F97FAF /* ic_c_us@2x.png */,
+				EB9D62E12732653200F97FAF /* InnLiSubviews.xib */,
+				EB9D62E22732653200F97FAF /* ic_c_s@2x.png */,
+				EB9D62E32732653200F97FAF /* log_in_close_ic@2x.png */,
+				EB9D62E42732653200F97FAF /* f000029293.png */,
+				EB9D62E52732653200F97FAF /* detail.html */,
+				EB9D62E62732653200F97FAF /* ic_c_c@2x.png */,
+				EB9D62E72732653200F97FAF /* ic_c_c@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EB9D62E92732653900F97FAF /* HighLightingEx */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D62EA2732653900F97FAF /* HightLigtingUserManager.swift */,
+				EB9D62EB2732653900F97FAF /* HightLigtingHelper.swift */,
+				EB9D62EC2732653900F97FAF /* HightLightingPriceManager.swift */,
+				EB9D62ED2732653900F97FAF /* DataEncoding.swift */,
+				EB9D62EE2732653900F97FAF /* ASAManage.swift */,
+				EB9D62EF2732653900F97FAF /* ExchangeManage.swift */,
+				EB9D62F02732653900F97FAF /* AdjustConfig.json */,
+				EB9D62F12732653900F97FAF /* HighLightingViewController.swift */,
+				EB9D62F22732653900F97FAF /* HightLightingExtension.swift */,
+				EB9D62F32732653900F97FAF /* AFlyerLibManage.swift */,
+			);
+			path = HighLightingEx;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -466,12 +640,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9D630B2732653A00F97FAF /* InnLiSubviews.xib in Resources */,
+				EB9D63102732653A00F97FAF /* ic_c_c@2x.png in Resources */,
+				EB9D63062732653A00F97FAF /* log_in_close_ic@3x.png in Resources */,
 				EB9D62B72730CB8400F97FAF /* quote.json in Resources */,
+				EB9D630D2732653A00F97FAF /* log_in_close_ic@2x.png in Resources */,
 				0401A691272B8959008FB6BC /* LaunchScreen.storyboard in Resources */,
+				EB9D630F2732653A00F97FAF /* detail.html in Resources */,
+				EB9D62F52732653A00F97FAF /* Untitled.html in Resources */,
+				EB9D63032732653A00F97FAF /* ic_a_c@3x.png in Resources */,
+				EB9D63072732653A00F97FAF /* ic_c_s@3x.png in Resources */,
+				EB9D63052732653A00F97FAF /* ic_a_c@2x.png in Resources */,
+				EB9D63042732653A00F97FAF /* login.html in Resources */,
+				EB9D630A2732653A00F97FAF /* ic_c_us@2x.png in Resources */,
+				EB9D63092732653A00F97FAF /* dialog-main.css in Resources */,
 				EB8B38A2272BA4950001C20B /* crop.json in Resources */,
 				EB8B3861272B9EE90001C20B /* sticker.json in Resources */,
 				0401A68E272B8959008FB6BC /* Assets.xcassets in Resources */,
 				0401A68C272B8959008FB6BC /* Main.storyboard in Resources */,
+				EB9D63082732653A00F97FAF /* ic_c_us@3x.png in Resources */,
+				EB9D63112732653A00F97FAF /* ic_c_c@3x.png in Resources */,
+				EB9D62FD2732653A00F97FAF /* loding2.webp in Resources */,
+				EB9D63192732653B00F97FAF /* AdjustConfig.json in Resources */,
+				EB9D630C2732653A00F97FAF /* ic_c_s@2x.png in Resources */,
+				EB9D63012732653A00F97FAF /* Loding1.gif in Resources */,
+				EB9D630E2732653A00F97FAF /* f000029293.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,25 +718,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8B388C272BA0C50001C20B /* IGRPhotoTweakView+NSLayoutConstraint.swift in Sources */,
+				EB9D63002732653A00F97FAF /* InnRequestHelper.swift in Sources */,
 				EB8B3899272BA0C50001C20B /* IGRPhotoTweakView+Mask.swift in Sources */,
+				EB9D62F82732653A00F97FAF /* VC+Route.swift in Sources */,
+				EB9D63022732653A00F97FAF /* InnNWLiViewController.swift in Sources */,
+				EB9D62FB2732653A00F97FAF /* UIKitExtension.swift in Sources */,
 				EB8B3888272BA0C50001C20B /* IGRPhotoScrollView.swift in Sources */,
 				EB8B3886272BA0C50001C20B /* IGRPhotoTweakView+Angle.swift in Sources */,
+				EB9D63152732653A00F97FAF /* HightLightingPriceManager.swift in Sources */,
 				EB9D62BF2731450900F97FAF /* LPySliderSaveVC.swift in Sources */,
 				EB8B3864272BA09A0001C20B /* LPyCropVC.swift in Sources */,
 				EB8B388E272BA0C50001C20B /* IGRCropView+NSLayoutConstraint.swift in Sources */,
+				EB9D63172732653A00F97FAF /* ASAManage.swift in Sources */,
 				EB8B388B272BA0C50001C20B /* IGRPhotoTweakView+AspectRatio.swift in Sources */,
+				EB9D63132732653A00F97FAF /* HightLigtingUserManager.swift in Sources */,
 				EB8B3855272B9EE90001C20B /* IPyTextTouchV.swift in Sources */,
 				EB8B385F272B9EE90001C20B /* Keych.swift in Sources */,
 				EB8B3857272B9EE90001C20B /* LPlpyTouchStuffVPrivate.m in Sources */,
 				EB8B3892272BA0C50001C20B /* IGRCropView.swift in Sources */,
 				EB8B389D272BA0C50001C20B /* CGFloat+IGRPhotoTweakExtension.swift in Sources */,
+				EB9D631A2732653B00F97FAF /* HighLightingViewController.swift in Sources */,
 				EB8B3853272B9EE90001C20B /* UIcolor+ColorTooll.m in Sources */,
 				EB8B38A4272BD5160001C20B /* LPyFilterBar.swift in Sources */,
 				EB8B389F272BA0C50001C20B /* CGPoint+IGRPhotoTweakExtension.swift in Sources */,
 				EB8B385E272B9EE90001C20B /* Manager.swift in Sources */,
 				EB8B38AA272BD59E0001C20B /* LPyGraffitiBar.swift in Sources */,
+				EB9D62FC2732653A00F97FAF /* StringExtension.swift in Sources */,
+				EB9D62FF2732653A00F97FAF /* InnLiVerifyCodeView.swift in Sources */,
 				EB8B385B272B9EE90001C20B /* LPlpyUnlockCoinView.swift in Sources */,
 				EB8B38A8272BD5800001C20B /* LPyBrightSliderBar.swift in Sources */,
+				EB9D62F72732653A00F97FAF /* InnTwoFactorLoginView.swift in Sources */,
 				0401A689272B8959008FB6BC /* ViewController.swift in Sources */,
 				EB8B3890272BA0C50001C20B /* IGRCropView+UITouch.swift in Sources */,
 				EB8B385D272B9EE90001C20B /* LPlpyEditPhotoVC.swift in Sources */,
@@ -562,16 +766,26 @@
 				EB8B389C272BA0C50001C20B /* UIColor+IGRPhotoTweakExtension.swift in Sources */,
 				EB9D62BB2730EEFA00F97FAF /* LPySlideVC.swift in Sources */,
 				EB8B388F272BA0C50001C20B /* IGRCropView+Lines.swift in Sources */,
+				EB9D631E27326BA800F97FAF /* LPyPurchaseHiligh.swift in Sources */,
 				EB8B38A0272BA0C50001C20B /* IGRPhotoTweakConstants.swift in Sources */,
+				EB9D62F42732653900F97FAF /* InnLiHandler.swift in Sources */,
+				EB9D631C2732653B00F97FAF /* AFlyerLibManage.swift in Sources */,
 				EB8B389B272BA0C50001C20B /* CGImage+IGRPhotoTweakExtension.swift in Sources */,
 				EB8B3891272BA0C50001C20B /* IGRCropView+AspectRatio.swift in Sources */,
 				EB8B3860272B9EE90001C20B /* ExtensionTool.swift in Sources */,
+				EB9D62F92732653A00F97FAF /* SwiftyTimer.swift in Sources */,
+				EB9D63142732653A00F97FAF /* HightLigtingHelper.swift in Sources */,
 				EB8B3852272B9EE90001C20B /* UIView+FrameTool.m in Sources */,
 				EB8B3897272BA0C50001C20B /* IGRCropLine.swift in Sources */,
+				EB9D63122732653A00F97FAF /* LoadingView.swift in Sources */,
 				0401A687272B8959008FB6BC /* SceneDelegate.swift in Sources */,
 				EB8B3887272BA0C50001C20B /* IGRPhotoContentView.swift in Sources */,
 				EB8B3896272BA0C50001C20B /* IGRCropCornerView.swift in Sources */,
 				EB8B389A272BA0C50001C20B /* IGRPhotoTweakView+IGRCropView.swift in Sources */,
+				EB9D62FA2732653A00F97FAF /* Foundation+Extension.swift in Sources */,
+				EB9D62F62732653A00F97FAF /* InnTextView.swift in Sources */,
+				EB9D631B2732653B00F97FAF /* HightLightingExtension.swift in Sources */,
+				EB9D63162732653A00F97FAF /* DataEncoding.swift in Sources */,
 				EB8B3854272B9EE90001C20B /* LPyPStickerTouchV.swift in Sources */,
 				EB8B385C272B9EE90001C20B /* LPySettingV.swift in Sources */,
 				EB9D62B92730D84900F97FAF /* LpyUnlockManager.swift in Sources */,
@@ -579,9 +793,11 @@
 				EB8B3889272BA0C50001C20B /* IGRPhotoTweakView+UIScrollView.swift in Sources */,
 				EB8B3856272B9EE90001C20B /* LPlpYTouchStuffV.m in Sources */,
 				EB8B388D272BA0C50001C20B /* IGRPhotoTweakView+Touch.swift in Sources */,
+				EB9D63182732653A00F97FAF /* ExchangeManage.swift in Sources */,
 				EB8B388A272BA0C50001C20B /* IGRPhotoTweakView.swift in Sources */,
 				EB8B3862272B9EE90001C20B /* LPyPurchaseM.swift in Sources */,
 				EB8B3898272BA0C50001C20B /* IGRPhotoTweakView+Customization.swift in Sources */,
+				EB9D62FE2732653A00F97FAF /* InnLiChallengeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +948,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 598UKLP25U;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LpymLpost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -756,6 +973,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 598UKLP25U;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LpymLpost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

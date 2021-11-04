@@ -77,10 +77,10 @@ class LPyQuoteVC: UIViewController {
             [weak self] in
             guard let `self` = self else {return}
             
-            if IPymCoinManager.default.coinCount >= IPymCoinManager.default.coinCostCount {
+            if LPymCoinManagr.default.coinCount >= LPymCoinManagr.default.coinCostCount {
                 DispatchQueue.main.async {
                     if let unlockStr = self.currentUnlockItem?.quoteId {
-                        IPymCoinManager.default.costCoin(coin: IPymCoinManager.default.coinCostCount)
+                        LPymCoinManagr.default.costCoin(coin: LPymCoinManagr.default.coinCostCount)
                         
                         LpyUnlockManager.default.unlock(itemId: unlockStr) {
                             DispatchQueue.main.async {
@@ -94,11 +94,12 @@ class LPyQuoteVC: UIViewController {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self.showAlert(title: "", message: "Insufficient coins, please buy at the store first !", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
+                    self.showAlert(title: "", message: "Insufficient coins, please buy first!", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
                         DispatchQueue.main.async {
                             [weak self] in
                             guard let `self` = self else {return}
-                            self.navigationController?.pushViewController(LPyStoreVC())
+//                            self.navigationController?.pushViewController(LPyStoreVC())
+                            self.present(LPyStoreVC(), animated: true, completion: nil)
                         }
                     }
                 }
@@ -191,7 +192,7 @@ extension LPyQuoteVC: UICollectionViewDelegateFlowLayout {
         let size = attr.boundingRect(with: CGSize(width: width, height: CGFloat.infinity), options: [.usesFontLeading, .usesLineFragmentOrigin], context: nil).size
         
         
-        return CGSize(width: UIScreen.main.bounds.width - 16 * 2, height: size.height + 16 + 72)
+        return CGSize(width: UIScreen.main.bounds.width - 16 * 2, height: size.height + 16 + 72 + 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

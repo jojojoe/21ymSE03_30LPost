@@ -35,14 +35,14 @@ extension Notice.Names {
     
 }
 
-class IPymCoinManager: NSObject {
+class LPymCoinManagr: NSObject {
     var coinCount: Int = 0
     var coinIpaItemList: [IPyStoreItem] = []
     
-    static let `default` = IPymCoinManager()
+    static let `default` = LPymCoinManagr()
     let coinFirst: Int = 0
-    let coinCostCount: Int = 50
-    let k_localizedPriceList = "IPyStoreItem.localizedPriceList"
+    let coinCostCount: Int = 100
+    let k_localizedPriceList = "LPyStoreItem.localizedPriceList"
     var currentBuyModel: IPyStoreItem?
     var purchaseCompletion: ((Bool, String?)->Void)?
     
@@ -197,7 +197,7 @@ class IPymCoinManager: NSObject {
     */
 }
 // Products StoreKit
-extension IPymCoinManager: SKProductsRequestDelegate, SKPaymentTransactionObserver {
+extension LPymCoinManagr: SKProductsRequestDelegate, SKPaymentTransactionObserver {
     
     func addObserver() {
         SKPaymentQueue.default().add(self)
@@ -252,7 +252,7 @@ extension IPymCoinManager: SKProductsRequestDelegate, SKPaymentTransactionObserv
                     SKPaymentQueue.default().finishTransaction(transaction)
                     if let item = self.currentBuyModel {
                          
-                        IPymCoinManager.default.addCoin(coin: item.coin)
+                        LPymCoinManagr.default.addCoin(coin: item.coin)
 //                        Adjust.trackEvent(ADJEvent(eventToken: AdjustKey.AdjustKeyAppCoinsBuy.rawValue))
 //
 //                        let priceStr = item.price.replacingOccurrences(of: "$", with: "")

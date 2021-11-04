@@ -28,7 +28,7 @@ class LPyStoreVC: UIViewController {
         NotificationCenter.default.nok.observe(name: .pi_noti_coinChange) {[weak self] _ in
             guard let `self` = self else {return}
             DispatchQueue.main.async {
-                self.topCoinLabel.text = ( "\(IPymCoinManager.default.coinCount)")
+                self.topCoinLabel.text = ( "\(LPymCoinManagr.default.coinCount)")
             }
         }
         .invalidated(by: pool)
@@ -77,7 +77,7 @@ class LPyStoreVC: UIViewController {
         
         topCoinLabel
             .color(UIColor(hexString: "#454D3D")!)
-            .text("\(IPymCoinManager.default.coinCount)")
+            .text("\(LPymCoinManagr.default.coinCount)")
             .fontName(16, "AvenirNext-DemiBold")
             .adhere(toSuperview: view)
         topCoinLabel.snp.makeConstraints {
@@ -120,7 +120,7 @@ class LPyStoreVC: UIViewController {
 extension LPyStoreVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withClass: LPyStoreCell.self, for: indexPath)
-        let item = IPymCoinManager.default.coinIpaItemList[indexPath.item]
+        let item = LPymCoinManagr.default.coinIpaItemList[indexPath.item]
         cell.coinCountLabel.text = "x \(item.coin)"
         if let localPrice = item.localPrice {
             cell.priceLabel.text = item.localPrice
@@ -134,7 +134,7 @@ extension LPyStoreVC: UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return IPymCoinManager.default.coinIpaItemList.count
+        return LPymCoinManagr.default.coinIpaItemList.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -171,7 +171,7 @@ extension LPyStoreVC: UICollectionViewDelegateFlowLayout {
 
 extension LPyStoreVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let item = IPymCoinManager.default.coinIpaItemList[safe: indexPath.item] {
+        if let item = LPymCoinManagr.default.coinIpaItemList[safe: indexPath.item] {
             selectCoinItem(item: item)
         }
         
@@ -184,7 +184,7 @@ extension LPyStoreVC: UICollectionViewDelegate {
     func selectCoinItem(item: IPyStoreItem) {
         // core
         
-        IPymCoinManager.default.purchaseIapId(item: item) { (success, errorString) in
+        PurchaseManagerLink.default.purchaseIapId(item: item) { (success, errorString) in
             
             if success {
                 ZKProgressHUD.showSuccess("Purchase successful.")
@@ -194,7 +194,7 @@ extension LPyStoreVC: UICollectionViewDelegate {
         }
         //
         
-//        IPymCoinManager.default.purchaseIapId(item: item) { (success, errorString) in
+//        LPymCoinManagr.default.purchaseIapId(item: item) { (success, errorString) in
 //
 //            if success {
 //                ZKProgressHUD.showSuccess("Purchase successful.")

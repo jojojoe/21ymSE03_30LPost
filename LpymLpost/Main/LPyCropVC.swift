@@ -339,9 +339,9 @@ extension LPyCropVC {
             [weak self] in
             guard let `self` = self else {return}
             
-            if IPymCoinManager.default.coinCount >= IPymCoinManager.default.coinCostCount {
+            if LPymCoinManagr.default.coinCount >= LPymCoinManagr.default.coinCostCount {
                 DispatchQueue.main.async {
-                    IPymCoinManager.default.costCoin(coin: IPymCoinManager.default.coinCostCount)
+                    LPymCoinManagr.default.costCoin(coin: LPymCoinManagr.default.coinCostCount)
                     LpyUnlockManager.default.unlock(itemId: self.currentSizeItem?.thumbName ?? "") {
                         DispatchQueue.main.async {
                             [weak self] in
@@ -354,7 +354,7 @@ extension LPyCropVC {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self.showAlert(title: "", message: "Not enough coins available, please buy first.", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
+                    self.showAlert(title: "", message: "Insufficient coins, please buy first!", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
                         DispatchQueue.main.async {
                             [weak self] in
                             guard let `self` = self else {return}
@@ -401,7 +401,7 @@ extension LPyCropVC {
 //                        guard let `self` = self else {return}
 //                        self.showSaveSuccessAlert()
 //                        if self.shouldCostCoin {
-//                            IPymCoinManager.default.costCoin(coin: IPymCoinManager.default.coinCostCount)
+//                            LPymCoinManagr.default.costCoin(coin: LPymCoinManagr.default.coinCostCount)
 //                        }
 //                    }
 //                } else {

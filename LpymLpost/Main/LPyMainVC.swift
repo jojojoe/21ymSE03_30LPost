@@ -21,7 +21,7 @@ class LPyMainVC: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
+        AFlyerLibManage.event_LaunchApp()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +97,7 @@ class LPyMainVC: UIViewController, UINavigationControllerDelegate {
         editPBtn
             .backgroundColor(UIColor(hexString: "#D9FF66")!)
             .image("homepage_edit")
-            .text("Edit a photo")
+            .text("Create")
             .font(16, "AvenirNext-DemiBold")
             .titleColor(UIColor(hexString: "#454D3D")!)
             .clipsToBounds()
@@ -248,6 +248,7 @@ extension LPyMainVC: UIImagePickerControllerDelegate {
         config.library.maxNumberOfItems = 1
         config.screens = [.library]
         config.library.defaultMultipleSelection = false
+        config.library.isSquareByDefault = false
         config.library.skipSelectionsGallery = true
         config.showsPhotoFilters = false
         config.library.preselectedItems = nil

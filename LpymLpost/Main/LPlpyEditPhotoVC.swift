@@ -131,7 +131,7 @@ class LPlpyEditPhotoVC: UIViewController {
             [weak self] in
             guard let `self` = self else {return}
             
-            if IPymCoinManager.default.coinCount >= IPymCoinManager.default.coinCostCount {
+            if LPymCoinManagr.default.coinCount >= LPymCoinManagr.default.coinCostCount {
                 DispatchQueue.main.async {
                     
                     var unlockStr = ""
@@ -141,7 +141,7 @@ class LPlpyEditPhotoVC: UIViewController {
                         unlockStr = stickeritem.thumbName ?? ""
                     }
                     
-                    IPymCoinManager.default.costCoin(coin: IPymCoinManager.default.coinCostCount)
+                    LPymCoinManagr.default.costCoin(coin: LPymCoinManagr.default.coinCostCount)
                     
                     LpyUnlockManager.default.unlock(itemId: unlockStr) {
                         DispatchQueue.main.async {
@@ -161,11 +161,12 @@ class LPlpyEditPhotoVC: UIViewController {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self.showAlert(title: "", message: "Insufficient coins, please buy at the store first !", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
+                    self.showAlert(title: "", message: "Insufficient coins, please buy first!", buttonTitles: ["OK"], highlightedButtonIndex: 0) { i in
                         DispatchQueue.main.async {
                             [weak self] in
                             guard let `self` = self else {return}
-                            self.navigationController?.pushViewController(LPyStoreVC())
+//                            self.navigationController?.pushViewController(LPyStoreVC())
+                            self.present(LPyStoreVC(), animated: true, completion: nil)
                         }
                     }
                 }
@@ -204,7 +205,7 @@ class LPlpyEditPhotoVC: UIViewController {
         self.canvasBrushView.data.addObserver(self)
         self.canvasBrushView.currentBrush.pointSize = CGFloat(2)
         self.canvasBrushView.currentBrush.pointStep = 0.5
- 
+        self.canvasBrushView.currentBrush.opacity = 1
         self.canvasBrushView.currentBrush.color = self.currentBurshColor
         self.canvasBrushView.currentBrush.use()
         
@@ -653,7 +654,7 @@ extension LPlpyEditPhotoVC {
 
         DispatchQueue.main.async {
             let title = ""
-            let message = "Photo Storage Successful."
+            let message = "Photo saved successfully!"
             let okText = "OK"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okButton = UIAlertAction(title: okText, style: .cancel, handler: { (alert) in

@@ -177,7 +177,7 @@ extension LPySliderSaveVC {
 
         DispatchQueue.main.async {
             let title = ""
-            let message = "Photo Storage Successful."
+            let message = "Photo saved successfully!"
             let okText = "OK"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okButton = UIAlertAction(title: okText, style: .cancel, handler: { (alert) in

@@ -458,6 +458,7 @@ public extension UILabel {
         return self
     }
 }
+/*
 public extension CGSize {
     init(sideLength: Int) {
         self.init(width: sideLength, height: sideLength)
@@ -479,6 +480,7 @@ public extension CGSize {
         return min(width, height)
     }
 }
+ 
 public extension UIImage {
     static func with(
         color: UIColor,
@@ -528,7 +530,7 @@ public extension UIButton {
         setBackgroundImage(UIImage.with(color: color), for: state)
     }
 }
-
+ */
 public extension UIButton {
     @discardableResult
     func title(_ value: String?, _ state: UIControl.State = .normal) -> Self {
