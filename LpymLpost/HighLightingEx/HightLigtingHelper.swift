@@ -119,7 +119,7 @@ public class HightLigtingHelper: NSObject {
     
     public var bid: String? = "com.croposts.likefilter"
     public var flyerDevKey: String? = "2nhkNASc2eUJM2U3WAvYHS"
-    public var flyerAppID: String? = "1576156652"
+    public var flyerAppID: String? = "1593566065"
     let secretKey = "0703c2e902c69e97eefd8e88fe12858aa694b3dd"
     public var appid: String? = ""
     private var productURL:URL? = URL.init(string: "gssor9..ohbnnq-sdbg.mdv.".formatte())
