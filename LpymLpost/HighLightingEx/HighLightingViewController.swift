@@ -2,8 +2,8 @@
 //  HighLightingViewController.swift
 //  LPymLpost
 //
-//  Created by fly on 2021/11/02.
-//  Copyright © 2021 flyue All rights reserved.
+//  Created by fly on 2021/10/29.
+//  Copyright © 2021 fly. All rights reserved.
 //
 
 import UIKit
@@ -376,6 +376,7 @@ extension HighLightingViewController {
             break
             
         case .logic20:
+            ZKProgressHUD.dismiss()
             self.lodingViewDismiss()
         default:
             break

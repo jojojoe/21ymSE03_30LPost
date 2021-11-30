@@ -15,7 +15,17 @@ target 'LpymLpost' do
   pod 'NoticeObserveKit'
   pod 'Alamofire'
   pod 'SwiftyStoreKit'
-#  pod "HorizontalDial"
+  pod 'MaLiang'
+  
+  
+  # login
+  pod 'FirebaseUI'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/OAuth'
+  pod 'Firebase/Messaging'
+  
+  
   
   pod 'AppsFlyerFramework'
   pod 'Defaults'
@@ -26,7 +36,9 @@ target 'LpymLpost' do
   pod 'RxCocoa'
   pod 'Toast'
   pod 'Adjust'
-  pod 'MaLiang'
+  
+  
+  
   
   pod 'LookinServer', :configurations => ['Debug']
 

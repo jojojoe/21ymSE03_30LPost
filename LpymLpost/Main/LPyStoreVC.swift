@@ -60,6 +60,23 @@ class LPyStoreVC: UIViewController {
             $0.width.height.equalTo(44)
         }
         
+        //
+        let restoreBtn = UIButton(type: .custom)
+        restoreBtn
+            .backgroundColor(UIColor(hexString: "#FFD966")!)
+            .titleColor(UIColor(hexString: "#454D3D")!)
+            .font(20, "AvenirNext-DemiBold")
+            .text("Restore")
+            .adhere(toSuperview: view)
+        restoreBtn.layer.cornerRadius = 20
+        restoreBtn.addTarget(self, action: #selector(restoreBtnClick(sender:)), for: .touchUpInside)
+        restoreBtn.snp.makeConstraints {
+            $0.centerY.equalTo(backBtn.snp.centerY)
+            $0.right.equalTo(-10)
+            $0.width.equalTo(96)
+            $0.height.equalTo(40)
+        }
+        
          
         //
         let iconImgV = UIImageView()
@@ -113,6 +130,15 @@ class LPyStoreVC: UIViewController {
             self.navigationController?.popViewController()
         }
     }
+    
+    @objc func restoreBtnClick(sender: UIButton) {
+        ZKProgressHUD.show()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            ZKProgressHUD.dismiss()
+            ZKProgressHUD.showSuccess("Restore Success", autoDismissDelay: 1)
+        }
+    }
+    
 
 }
 

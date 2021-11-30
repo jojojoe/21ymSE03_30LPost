@@ -22,13 +22,24 @@ class LPyMainVC: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         setupView()
         AFlyerLibManage.event_LaunchApp()
+        
+        showLoginVC()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.isLock = false
     }
-    
+    func showLoginVC() {
+        if APLoginMana.currentLoginUser() == nil {
+            let loginVC = APLoginMana.shared.obtainVC()
+            loginVC.modalTransitionStyle = .crossDissolve
+            loginVC.modalPresentationStyle = .fullScreen
+            
+            self.present(loginVC, animated: true) {
+            }
+        }
+    }
     func setupView() {
         
         view.backgroundColor(UIColor(hexString: "#F2F2F2")!)

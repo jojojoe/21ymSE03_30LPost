@@ -12,9 +12,9 @@ import AppTrackingTransparency
 // com.croposts.likefilter
 
 
-let AppName: String = "Light up"
+let AppName: String = "Likes+Photo"
 let purchaseUrl = ""
-let TermsofuseURLStr = "https://www.app-privacy-policy.com/live.php?token=bO63CFjK79zuMPmaf2uDVKYNPEFdYgQR"
+let TermsofuseURLStr = "http://frequent-shock.surge.sh/Terms_of_use.html"
 let PrivacyPolicyURLStr = "http://lamentable-sink.surge.sh/Facial_Privacy_Policy.html"
 
 let feedbackEmail: String = "juliatorrilpo86@gmail.com"
@@ -32,14 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        NotificationCenter.default.addObserver(self, selector: #selector(applicDidBecomeActiveNotifi(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
         
+        registerNotifications(application)
         HightLigtingHelper.default.initSwiftStoryKit()
         NotificationCenter.default.post(name: .didFinishLaunching,
                                         object: [nil])
         
         
-        registerNotifications(application)
-                 
         
+                 
+        APLoginMana.fireAppInit()
         
         return true
     }
@@ -59,6 +60,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 //    }
 
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        APLoginMana.receivesAuthenticationProcess(url: url, options: options)
+        
+        
+        return true
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

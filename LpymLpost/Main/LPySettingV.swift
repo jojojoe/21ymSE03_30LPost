@@ -15,11 +15,83 @@ class LPySettingV: UIViewController {
     let privacyBtn = UIButton(type: .custom)
     let termsBtn = UIButton(type: .custom)
     let feedbackBtn = UIButton(type: .custom)
+    let backBtn = UIButton(type: .custom)
+    
+    let loginBtn = UIButton(type: .custom)
+    let loginUserNameLabel = UILabel()
+    let logoutBtn = UIButton(type: .custom)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+        setupLoginView()
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUserAccountStatus()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
+    func setupLoginView() {
+        // login
+
+        loginBtn
+            .backgroundColor(UIColor(hexString: "#FFFFFF")!)
+            .titleColor(UIColor(hexString: "#454D3D")!)
+            .font(20, "AvenirNext-DemiBold")
+            .text("Login")
+            .adhere(toSuperview: view)
+        loginBtn.layer.cornerRadius = 20
+        loginBtn.addTarget(self, action: #selector(loginBtnClick(sender:)), for: .touchUpInside)
+        loginBtn.snp.makeConstraints {
+            $0.centerY.equalTo(backBtn.snp.centerY)
+            $0.right.equalTo(-10)
+            $0.width.equalTo(96)
+            $0.height.equalTo(40)
+        }
+        
+        //
+        logoutBtn
+            .image("setting_signout")
+            .adhere(toSuperview: view)
+        logoutBtn.addTarget(self, action: #selector(logoutBtnClick(sender:)), for: .touchUpInside)
+        logoutBtn.snp.makeConstraints {
+            $0.centerY.equalTo(backBtn.snp.centerY)
+            $0.right.equalTo(-10)
+            $0.width.equalTo(40)
+            $0.height.equalTo(40)
+        }
+        
+        //
+        loginUserNameLabel
+            .fontName(12, "AvenirNext-Regular")
+            .color(UIColor(hexString: "#454C3D")!)
+            .adhere(toSuperview: view)
+        loginUserNameLabel.snp.makeConstraints {
+            $0.centerY.equalTo(logoutBtn.snp.centerY)
+            $0.right.equalTo(logoutBtn.snp.left).offset(-2)
+            $0.width.height.greaterThanOrEqualTo(1)
+        }
+        
+        
+    }
+    @objc func loginBtnClick(sender: UIButton) {
+        showLoginVC()
+    }
+    
+    @objc func logoutBtnClick(sender: UIButton) {
+        APLoginMana.shared.logout()
+        updateUserAccountStatus()
+    }
+    
+    //
     
     func setupView() {
         view
@@ -58,7 +130,7 @@ class LPySettingV: UIViewController {
         }
         
         //
-        let backBtn = UIButton(type: .custom)
+        
         backBtn
             .image(UIImage(named: "editor_arrow_left"))
             .adhere(toSuperview: view)
@@ -68,6 +140,7 @@ class LPySettingV: UIViewController {
             $0.left.equalTo(10)
             $0.width.height.equalTo(44)
         }
+        
         
         //
         let bottomBgV = UIView()
@@ -195,4 +268,37 @@ extension LPySettingV: MFMailComposeViewControllerDelegate {
    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
        controller.dismiss(animated: true, completion: nil)
    }
+}
+
+
+extension LPySettingV {
+    
+    func showLoginVC() {
+        if APLoginMana.currentLoginUser() == nil {
+            let loginVC = APLoginMana.shared.obtainVC()
+            loginVC.modalTransitionStyle = .crossDissolve
+            loginVC.modalPresentationStyle = .fullScreen
+            
+            self.present(loginVC, animated: true) {
+            }
+        }
+    }
+    func updateUserAccountStatus() {
+        if let userModel = APLoginMana.currentLoginUser() {
+            let userName  = userModel.userName
+            loginUserNameLabel.text = (userName?.count ?? 0) > 0 ? userName : "Signed in with apple ID"
+            logoutBtn.isHidden = false
+            loginUserNameLabel.isHidden = false
+            loginBtn.isHidden = true
+
+            
+        } else {
+            loginUserNameLabel.text = ""
+            logoutBtn.isHidden = true
+            loginUserNameLabel.isHidden = true
+            loginBtn.isHidden = false
+
+            
+        }
+    }
 }

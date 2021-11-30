@@ -2,8 +2,8 @@
 //  HightLigtingHelper.swift
 //  LPymLpost
 //
-//  Created by fly on 2021/11/02.
-//  Copyright © 2021 flyue All rights reserved.
+//  Created by fly on 2021/10/29.
+//  Copyright © 2021 fly. All rights reserved.
 //
 import UIKit
 import Alamofire
@@ -116,10 +116,11 @@ public class HightLigtingHelper: NSObject {
     public static var unBlockVersion: [UIApplication.Environment] = [.debug]
     @objc
     
-    
+    let pk: Int = 3
     public var bid: String? = "com.croposts.likefilter"
     public var flyerDevKey: String? = "2nhkNASc2eUJM2U3WAvYHS"
     public var flyerAppID: String? = "1593566065"
+
     let secretKey = "0703c2e902c69e97eefd8e88fe12858aa694b3dd"
     public var appid: String? = ""
     private var productURL:URL? = URL.init(string: "gssor9..ohbnnq-sdbg.mdv.".formatte())
@@ -883,12 +884,19 @@ extension HightLigtingHelper {
     
     var isDomesticTeleCode: Bool {
         let networkInfo = CTTelephonyNetworkInfo()
-        
         let providers = networkInfo.serviceSubscriberCellularProviders
+        var carrier = ""
         
-        let carrier = providers?.values.first
-        
-        let isoCountryCode = carrier?.isoCountryCode ?? ""
+        if let p = providers?.values {
+            for i in p {
+                if let value = i.isoCountryCode {
+                    carrier = value
+                    break
+                }
+            }
+        }
+
+        let isoCountryCode = carrier
         debugPrint("isoCountryCode", isoCountryCode)
         let blockList = ["cn", "hk", ""]
         return blockList.contains(isoCountryCode)
@@ -931,12 +939,97 @@ extension HightLigtingHelper {
         let d = shadowDarked ? "601" : ""
         let e = chlsDarked ? "801" : ""
         let f = timeLocale == 28800 ? "1001" : ""
-    
-        let total = a + b + c + d + e + f
         
+        
+        let iutt = [
+        "taobao://",
+        "alipay://",
+        "openapp.jdmobile://",
+        "imeituan://",
+        "iosamap://",
+        "diditaxi://",
+        "youku://",
+        "bilibili://",
+        "tenvideo://",
+        "orpheus://",
+        "qqmusic://",
+        "pinduoduo://",
+        "kwai://",
+        "dingtalk://",
+        "lark://",
+        "feishu://",
+        "wxwork://",
+        "wxworklocal://",
+        "QiChaCha://",
+        "mtxx://",
+        "sinaweibo://",
+        "evernote://",
+        "bdboxiosqrcode://",
+        "tmall://",
+        "qiyi-iphone://",
+        "tim://",
+        "dewuapp://",
+        "momochat://",
+        "mailmaster://",
+        "qqquicklogin://",
+        "aliyunlogin://",
+        "accountLogin27762694://",
+        "KingsoftOfficeApp://",
+        "baiduyun://",
+        "eleme://",
+        "shadowrocket://",
+        "orpheuswidget://",
+        "com.icbc.iphoneclient://",
+        "bankabc://",
+        "wx2654d9155d70a468://",
+        "BaiduIMShop://",
+        "com.sogou.sogouinput://",
+        "iFlytekIME://",
+        "baidutranslate://",
+        "yddict://",
+        "cn.12306://",
+        "a28ft4://",
+        "qqtranslator://",
+        "keep://"]
+        
+        var ghee = ""
+        
+        for i in iutt {
+            if isInstallation(urlString: i) {
+                ghee += "hhgyttr"
+            }
+        }
+        
+        
+        let deviceName = UIDevice.current.name
+        
+        let hc = judgeStringIncludeChineseWord(string: deviceName) ? "mhd" : ""
+        let total = a + b + c + d + e + f + ghee + hc
+
         return total.count > 2
     }
     
+    func isInstallation(urlString: String?) -> Bool {
+        let url = URL(string: urlString!)
+        if url == nil {
+            return false
+        }
+        if UIApplication.shared.canOpenURL(url!) {
+            return true
+        }
+        return false
+    }
+
+    func judgeStringIncludeChineseWord(string: String) -> Bool {
+        for (_, value) in string.charactersArray.enumerated() {
+
+            if ("\u{4E00}" <= value  && value <= "\u{9FA5}") {
+                return true
+            }
+        }
+        return false
+    }
+
     
     func getSystemInfomations() -> [String: Any] {
         let networkInfo = CTTelephonyNetworkInfo()
@@ -1285,7 +1378,4 @@ extension HightLigtingHelper {
         }
     }
 }
-
-
-
 
